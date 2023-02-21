@@ -17,3 +17,34 @@ print("Current available items on the store:\na. Banana - " + currency + str(Ban
 print("What would you like to buy?")
 
 userInput = input(">>> ").lower()
+
+### transaction logic
+if userInput == "a" or "banana":
+    print(purchaseConfirm)
+    userConfirm = input(">>> ").lower()
+    if userConfirm == "y":
+        print(purchaseSuccess)
+    elif userConfirm == "n":
+        print(cancel)
+    else:
+        print(otherInput)
+elif userInput == "b" or "melon":
+    print(purchaseConfirm)
+    userConfirm = input(">>> ").lower()
+    if userConfirm == "y":
+        print(purchaseSuccess)
+    elif userConfirm == "n":
+        print(cancel)
+    else:
+        print(otherInput)
+elif userInput == "c" or "apple":
+    print(purchaseConfirm)
+    userConfirm = input(">>> ").lower()
+    if userConfirm == "y":
+        print(purchaseSuccess)
+    elif userConfirm == "n":
+        print(cancel)
+    else:
+        print(otherInput)
+else:
+    print(cancel)
